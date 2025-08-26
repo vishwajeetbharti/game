@@ -6,7 +6,7 @@ A fast and fun number puzzle game built with Flutter & Dart.
 ---
 
 ### 📥 Download APK
-[Download app-release.apk](https://github.com/yourusername/yourrepo/releases/download/v1.0.0/app-release.apk)
+[Download app-release.apk](https://github.com/vishwajeetbharti/game/tree/main/release-build/app-release.apk)
 
 
 ##  About the Project
