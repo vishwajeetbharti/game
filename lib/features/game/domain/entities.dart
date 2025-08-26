@@ -12,6 +12,7 @@ class LevelConfig extends Equatable {
   final int maxAddRows;        // limit add-row button usage
   final List<int> allowedNumbers;
   final int seconds;           // 120
+  final int difficulty;           // 120
 
   const LevelConfig({
     required this.rows,
@@ -20,10 +21,11 @@ class LevelConfig extends Equatable {
     required this.maxAddRows,
     required this.allowedNumbers,
     required this.seconds,
+    required this.difficulty,
   });
 
   @override
-  List<Object?> get props => [rows, cols, initialFilledRows, maxAddRows, allowedNumbers, seconds];
+  List<Object?> get props => [rows, cols, initialFilledRows, maxAddRows, allowedNumbers, seconds,difficulty];
 }
 
 class Cell extends Equatable {
@@ -69,16 +71,16 @@ class Cell extends Equatable {
 class LevelPresets {
   static final List<LevelConfig> levels = [
     LevelConfig(
-      rows: 9, cols: 7, initialFilledRows: 3, maxAddRows: 4,
-      allowedNumbers: [1,2,3,4,5,6,7,8,9], seconds: 120,
+      rows: 9, cols: 7, initialFilledRows: 4, maxAddRows: 3,
+      allowedNumbers: [1,2,3,4,5,6,7,8,9], seconds: 120,difficulty:1
     ),
     LevelConfig(
-      rows: 10, cols: 8, initialFilledRows: 4, maxAddRows: 5,
-      allowedNumbers: [0,1,2,3,4,5,6,7,8,9], seconds: 120,
+      rows: 10, cols: 7, initialFilledRows: 4, maxAddRows: 5,
+      allowedNumbers: [0,1,2,3,4,5,6,7,8,9], seconds: 120,difficulty:2
     ),
     LevelConfig(
       rows: 11, cols: 9, initialFilledRows: 4, maxAddRows: 4,
-      allowedNumbers: [0,1,2,3,4,5,6,7,8,9], seconds: 120,
+      allowedNumbers: [0,1,2,3,4,5,6,7,8,9], seconds: 120,difficulty:3
     ),
   ];
 

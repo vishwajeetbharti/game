@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/game_bloc.dart';
@@ -20,6 +22,7 @@ class GamePage extends StatelessWidget {
             final bloc = context.read<GameBloc>();
             final level = state.level;
             final grid = state.grid;
+            log(state.grid.toString());
 
             return Column(
               children: [
