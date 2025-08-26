@@ -5,6 +5,10 @@ A fast and fun number puzzle game built with Flutter & Dart.
 
 ---
 
+### 📥 Download APK
+[Download app-release.apk](https://github.com/yourusername/yourrepo/releases/download/v1.0.0/app-release.apk)
+
+
 ##  About the Project
 
 **Number Game** is a visually engaging and intuitive number puzzle where players solve number-based challenges under time constraints. Designed for both single sessions and daily challenges, it combines increasing difficulty levels with strategic play.
